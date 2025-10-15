@@ -5,5 +5,15 @@
     "name": "Miles Chou"
   },
   "plugins": [
+    {
+      "name": "document",
+      "description": "Document tools",
+      "category": "development",
+      "version": "1.0.0",
+      "keywords": [
+        "document"
+      ],
+      "source": "./plugins/document"
+    }
   ]
 }
