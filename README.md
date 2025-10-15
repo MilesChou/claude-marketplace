@@ -15,6 +15,7 @@
 - [Customize Claude Code with plugins](https://www.anthropic.com/news/claude-code-plugins)
 - [Plugin - Claude Code Docs](https://docs.claude.com/en/docs/claude-code/plugins)
 - [Plugin marketplaces - Claude Code Docs](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
+- [Claude Code Marketplace](https://claudecodemarketplace.com/)
 
 其他 Marketplace：
 
