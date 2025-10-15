@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "mileschou-marketplace",
+  "owner": {
+    "name": "Miles Chou"
+  },
+  "plugins": [
+  ]
+}
