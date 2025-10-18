@@ -14,6 +14,16 @@
         "document"
       ],
       "source": "./plugins/document"
+    },
+    {
+      "name": "git",
+      "description": "Git tools",
+      "category": "development",
+      "version": "1.0.0",
+      "keywords": [
+        "git"
+      ],
+      "source": "./plugins/git"
     }
   ]
 }

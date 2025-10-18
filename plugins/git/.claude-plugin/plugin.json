@@ -1,0 +1,8 @@
+{
+  "name": "git",
+  "description": "Git tools",
+  "version": "1.0.0",
+  "author": {
+    "name": "Miles Chou"
+  }
+}

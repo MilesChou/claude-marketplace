@@ -1,4 +1,7 @@
-# Document expand
+---
+description: Document expand
+model: claude-sonnet-4-5
+---
 
 將概要文件透過互動式詢問擴充為完整文件。
 

@@ -1,4 +1,7 @@
-# Document compact
+---
+description: Document compact
+model: claude-sonnet-4-5
+---
 
 精簡文件內容，保留核心價值並減少冗餘。
 
