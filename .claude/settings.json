@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:trunkbaseddevelopment.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
