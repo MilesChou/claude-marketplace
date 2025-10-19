@@ -24,6 +24,26 @@
         "git"
       ],
       "source": "./plugins/git"
+    },
+    {
+      "name": "orik",
+      "description": "Orik tools",
+      "category": "development",
+      "version": "1.0.0",
+      "keywords": [
+        "git"
+      ],
+      "source": "./plugins/orik"
+    },
+    {
+      "name": "plugin-dev",
+      "description": "Plugin tools",
+      "category": "development",
+      "version": "1.0.0",
+      "keywords": [
+        "git"
+      ],
+      "source": "./plugins/plugin-dev"
     }
   ]
 }
