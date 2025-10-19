@@ -37,3 +37,25 @@
 [正在測試 git:resolving-conflict skill]
 
 User: 我發現步驟 3 的說明不夠清楚，應該要先執行 git status。
+Assistant: [定位到 git plugin 的 resolving-conflict skill]
+         好的，我來更新步驟 3 的說明，加入 git status 指令。
+         [使用 Edit 工具修改 SKILL.md]
+```
+
+## 安裝方式
+
+將此 Plugin 加入你的 Claude Code 配置：
+
+```json
+{
+  "plugins": {
+    "plugin-dev": {
+      "source": "marketplace:plugin-dev@mileschou-marketplace"
+    }
+  }
+}
+```
+
+## 版本記錄
+
+請參閱 [CHANGELOG.md](./CHANGELOG.md) 查看詳細的版本變更記錄。

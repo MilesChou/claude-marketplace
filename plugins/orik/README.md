@@ -168,3 +168,20 @@ ORIK 會為推導的內容標記置信度：
   }
 }
 ```
+
+## 與 Kiro 的關係
+
+ORIK 是 [Kiro Plugin](../kiro) 的逆向工程版本：
+
+- **Kiro**：需求 → 設計 → 實作（正向開發流程）
+- **Orik**：實作 → 設計 → 需求（逆向分析流程）
+
+當使用 ORIK 完成逆向分析後，可以將生成的規格轉換為 Kiro 格式，繼續使用 Kiro 進行正向開發。
+
+## 版本記錄
+
+請參閱 [CHANGELOG.md](./CHANGELOG.md) 查看詳細的版本變更記錄。
+
+## 作者
+
+Miles Chou ([@mileschou-marketplace](https://github.com/MilesChou))

@@ -1,6 +1,6 @@
 {
-  "name": "Orik",
-  "description": "Orik tools",
+  "name": "plugin-dev",
+  "description": "Plugin development tools",
   "version": "0.1.0",
   "author": {
     "name": "Miles Chou"

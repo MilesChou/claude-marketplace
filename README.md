@@ -10,6 +10,10 @@
 
 接著就能開始搜尋並安裝各種 Plugin 了。
 
+## 版本記錄
+
+請參閱 [CHANGELOG.md](./CHANGELOG.md) 查看專案的版本變更記錄。
+
 ## References
 
 - [Customize Claude Code with plugins](https://www.anthropic.com/news/claude-code-plugins)

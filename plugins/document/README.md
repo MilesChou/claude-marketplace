@@ -84,3 +84,31 @@
 ```
 
 系統會使用 Unicode 框線圖表、樹狀結構、流程圖等視覺化工具來解釋概念。
+
+## 安裝方式
+
+將此 Plugin 加入你的 Claude Code 配置：
+
+```json
+{
+  "plugins": {
+    "document": {
+      "source": "marketplace:document@mileschou-marketplace"
+    }
+  }
+}
+```
+
+## 使用建議
+
+- **擴充文件**時，請準備相關技術規格和案例，可透過多次詢問細節來達到最佳效果
+- **精簡文件**前，建議先備份原始文件，精簡後請檢查技術準確性
+- **概念解釋**適合用於學習新技術、理解複雜架構、或向團隊說明設計決策
+
+## 版本記錄
+
+請參閱 [CHANGELOG.md](./CHANGELOG.md) 查看詳細的版本變更記錄。
+
+## 作者
+
+Miles Chou ([@mileschou-marketplace](https://github.com/MilesChou))
