@@ -1,5 +1,5 @@
 ---
-name: Quick-Fix
+name: quick-fix
 description: 當使用 test 開頭的 command、skill、agent 時，在執行過程中使用者提出改善建議，立即調整 .claude 目錄中對應的 md 檔案
 ---
 
