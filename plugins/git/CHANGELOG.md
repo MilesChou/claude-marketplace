@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-10-19
+
+### Changed
+
+- 改善錯誤處理文件說明
+  - 補充 `.git/index.lock` 鎖定錯誤的處理方式
+  - 將「其他錯誤」與鎖定錯誤分開說明
+
 ## [1.0.0] - 2025-10-19
 
 ### Added
