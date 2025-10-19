@@ -261,7 +261,7 @@ allowed-tools: Bash, Read, Write, Edit, MultiEdit
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 分析統計
   • 識別功能需求：[數量]
-  • 推導非功能需求：[數量]  
+  • 推導非功能需求：[數量]
   • 發現需求缺口：[數量]
   • 整體置信度：[高/中/低]
 
@@ -277,11 +277,6 @@ allowed-tools: Bash, Read, Write, Edit, MultiEdit
   1. 審查推導的需求文件
   2. 與團隊驗證準確性
   3. 補充缺失的業務背景
-  4. 建立正式的 Kiro 規格（如需要）
-
-💡 轉換為正向流程
-  如要建立正式規格，執行：
-  /kiro:spec-init $ARGUMENTS --from-orik
 ```
 
 ## 推導策略

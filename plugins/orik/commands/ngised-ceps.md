@@ -10,7 +10,7 @@ allowed-tools: Bash, Read, Write, Edit, MultiEdit, Grep, Glob, LS
 
 ## 逆向分析流程概述
 
-**ORIK (Kiro 反向)** 是從既有實作逆向推導出設計和需求的流程：
+**ORIK** 是從既有實作逆向推導出設計和需求的流程：
 - 階段 1：**實作 → 設計** (ngised-ceps)
 - 階段 2：**設計 → 需求** (stnemeriuqer-ceps)
 
