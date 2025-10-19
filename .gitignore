@@ -1,0 +1,7 @@
+.idea
+.vscode
+
+# Test plugins
+.claude/agents/test
+.claude/commands/test
+.claude/skills/test
