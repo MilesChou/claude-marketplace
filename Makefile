@@ -23,14 +23,14 @@ install: ## Install plugin (including all agents, commands and skills)
 	@if [ -d "plugins/$(PLUGIN)/agents" ]; then \
 		echo "Installing Agents:"; \
 		mkdir -p "$(INSTALL_DIR)/.claude/agents/test/$(PLUGIN)"; \
-		for agent in plugins/$(PLUGIN)/agents/*/; do \
-			if [ -d "$$agent" ]; then \
-				agent_name=$$(basename "$$agent"); \
-				target="$(INSTALL_DIR)/.claude/agents/test/$(PLUGIN)/$$agent_name"; \
+		for agent in plugins/$(PLUGIN)/agents/*.md; do \
+			if [ -f "$$agent" ]; then \
+				agent_name=$$(basename "$$agent" .md); \
+				target="$(INSTALL_DIR)/.claude/agents/test/$(PLUGIN)/$$agent_name.md"; \
 				if [ -L "$$target" ]; then \
 					rm "$$target"; \
 				fi; \
-				ln -s "$(PWD)/plugins/$(PLUGIN)/agents/$$agent_name" "$$target"; \
+				ln -s "$(PWD)/plugins/$(PLUGIN)/agents/$$agent_name.md" "$$target"; \
 				echo "  ✓ $$agent_name"; \
 			fi; \
 		done; \

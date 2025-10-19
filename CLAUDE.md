@@ -24,8 +24,7 @@ plugins/
 └── {plugin-name}/          # Plugin 名稱（kebab-case）
     ├── README.md           # Plugin 說明文件
     ├── agents/             # Agents 目錄
-    │   └── {agent-name}/   # Agent 名稱（kebab-case）
-    │       └── AGENT.md    # Agent 定義檔（必須）
+    │   └── {agent-name}.md # Agent 定義檔
     ├── commands/           # Commands 目錄
     │   └── {name}.md       # Command 定義檔
     └── skills/             # Skills 目錄
