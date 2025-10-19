@@ -62,20 +62,14 @@ git log --oneline main..HEAD
 
 根據使用者在步驟 2 選擇的工作模式，讀取並執行對應的流程文件：
 
-- **選項 1：直接在主幹提交** → 讀取 `committing-straight.md` 並執行流程
-- **選項 2：建立短期分支** → 讀取 `short-lived-branch.md` 並執行流程
+- **選項 1：直接在主幹提交** → 讀取 [`committing-straight.md`](committing-straight.md) 並執行流程
+- **選項 2：建立短期分支** → 讀取 [`short-lived-branch.md`](short-lived-branch.md) 並執行流程
 
 **重要：**
 - 使用 Read 工具讀取對應的流程文件
 - 完整遵循文件中的執行步驟
 - 如遇衝突，使用 `resolving-conflict` skill 解決
 - 提供清晰的進度回饋給使用者
-
-**流程文件路徑：**
-```
-plugins/git/skills/tbd-flow/committing-straight.md
-plugins/git/skills/tbd-flow/short-lived-branch.md
-```
 
 ### 4. 發布管理
 
@@ -122,46 +116,6 @@ git push origin main
 - 每完成一個小功能就提交
 - 提交前確保程式碼可編譯
 
-### Feature Flags
-
-使用功能開關隱藏未完成功能，允許提早合併到主幹：
-- 降低合併衝突
-- 在生產環境中逐步啟用
-- 快速回滾問題功能
-
-### 持續整合
-
-- 每天開始工作前：`git pull --rebase origin main`
-- 開發過程中每 2-4 小時：`git rebase origin/main`
-- 提交前執行測試並推送
-
-## 工作流程範例
-
-### 範例：小功能直接提交
-```bash
-# 1. 更新主幹
-git checkout main && git pull --rebase origin main
-
-# 2. 進行修改後使用
-/git:commit-push
-
-# 3. 監控 CI/CD
-```
-
-### 範例：短期分支開發
-```bash
-# 1. 建立短期分支（預計 < 1 天完成）
-git checkout -b feature/advanced-search
-
-# 2. 開發循環：編碼 → 提交 → 整合（每 2-4 小時）
-git add . && git commit -m "feat: xxx"
-git fetch origin main && git rebase origin/main
-
-# 3. 完成後建立 PR，Review 通過立即合併
-gh pr create && gh pr merge --squash
-git checkout main && git branch -d feature/advanced-search
-```
-
 ## 注意事項
 
 ### 團隊協作
@@ -176,37 +130,3 @@ git checkout main && git branch -d feature/advanced-search
 - 頻繁整合可減少衝突
 - 遇到衝突使用 `resolving-conflict` skill
 - 大型重構需要團隊協調時間窗口
-
-### 技術要求
-
-**必要條件：**
-- 完善的自動化測試（單元測試 + 整合測試）
-- CI/CD 流程（每次提交都觸發）
-- 快速的建置和測試（< 10 分鐘）
-
-**建議條件：**
-- Feature flag 系統
-- 自動化部署
-- 監控和快速回滾機制
-- Code review 流程
-
-### 常見問題
-
-**Q: 功能還沒完成可以合併到主幹嗎？**
-A: 可以！使用 feature flags 隱藏未完成功能，這樣能持續整合並減少衝突。
-
-**Q: 緊急 hotfix 怎麼處理？**
-A: 直接在主幹修復或在 release 分支修復後 cherry-pick 回主幹。
-
-**Q: 自動化測試不完善怎麼辦？**
-A: 先建立基礎測試覆蓋，逐步過渡，加強 Code Review，使用 feature flags 降低風險。
-
-**Q: 如何處理大型重構？**
-A: 拆分成多個小步驟，使用 Branch by Abstraction 模式，每個步驟可獨立運作並頻繁提交。
-
-## 相關工具
-
-- `commit-push` - 產生提交訊息
-- `resolving-conflict` - 解決衝突
-- `reviewers:requesting-code-review` - 請求審查
-
