@@ -6,6 +6,19 @@
   },
   "plugins": [
     {
+      "name": "ddd",
+      "description": "Domain-Driven Design (DDD) tools and best practices",
+      "category": "development",
+      "version": "1.0.0",
+      "keywords": [
+        "ddd",
+        "domain-driven-design",
+        "strategic-design",
+        "bounded-context"
+      ],
+      "source": "./plugins/ddd"
+    },
+    {
       "name": "document",
       "description": "Document tools",
       "category": "development",
@@ -19,7 +32,7 @@
       "name": "git",
       "description": "Git tools",
       "category": "development",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "keywords": [
         "git"
       ],
