@@ -45,14 +45,6 @@
       "keywords": [
       ],
       "source": "./plugins/orik"
-    },
-    {
-      "name": "plugin-dev",
-      "description": "Plugin tools",
-      "category": "development",
-      "keywords": [
-      ],
-      "source": "./plugins/plugin-dev"
     }
   ]
 }
