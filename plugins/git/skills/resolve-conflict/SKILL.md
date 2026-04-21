@@ -1,6 +1,7 @@
 ---
-name: Resolving-Conflict
+name: resolve-conflict
 description: 協助解決 Git Rebase 或 Merge 過程中的衝突，提供系統化的衝突解決流程。
+allowed-tools: Bash(git status:*),Bash(git diff:*),Bash(git log:*),Read,Edit
 ---
 
 # 解決 Git 衝突
@@ -26,6 +27,10 @@ git status
 確認是 rebase 還是 merge 衝突：
 - Rebase: 會顯示 `rebase in progress`
 - Merge: 會顯示 `You have unmerged paths`
+
+**無衝突時：**
+- 提示使用者目前沒有衝突需要解決
+- 說明此 skill 適用於 `git rebase` 或 `git merge` 過程中遇到衝突的情況
 
 ### 2. 列出衝突檔案
 
@@ -177,8 +182,6 @@ User: [選擇保留雙方的文件更新]
 
 Agent: 所有衝突已解決，執行 git rebase --continue
   Rebase 成功完成！
-
-User: [確認結果並繼續開發]
 ```
 
 ## 注意事項
@@ -221,9 +224,3 @@ git checkout --theirs <二進位檔案>
 **檔案刪除衝突：**
 - 一方修改，一方刪除
 - 需要判斷是否應該保留或刪除該檔案
-
-## 整合其他工具
-
-解決衝突後建議：
-- 使用 `reviewers:requesting-code-review` 檢視解決方案
-- 執行專案的測試套件

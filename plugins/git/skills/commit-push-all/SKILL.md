@@ -1,7 +1,7 @@
 ---
-description: Commit and Push All
+name: commit-push-all
+description: 無條件將所有變更提交並推送到遠端儲存庫，不考慮提交原子性。
 allowed-tools: Bash(git add:*),Bash(git branch:*),Bash(git diff:*),Bash(git log:*),Bash(git push:*),Bash(git status:*),Bash(git symbolic-ref:*)
-model: claude-haiku-4-5
 ---
 
 無條件將所有變更提交並推送到遠端儲存庫，不考慮提交原子性。

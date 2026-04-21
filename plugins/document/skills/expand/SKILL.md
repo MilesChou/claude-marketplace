@@ -1,6 +1,6 @@
 ---
-description: Document expand
-model: claude-sonnet-4-5
+name: expand
+description: 將概要文件透過互動式詢問擴充為完整文件。
 ---
 
 將概要文件透過互動式詢問擴充為完整文件。
@@ -87,7 +87,6 @@ AI Assistant: 了解！我會補充以下內容：
 
 ## 注意事項
 
-**重要提醒**
 - 擴充過程可以多次詢問細節
 - 請準備相關技術規格和案例
 - 可隨時中斷並保存進度

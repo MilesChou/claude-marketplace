@@ -1,7 +1,7 @@
 ---
-description: Commit and Push
+name: commit-push
+description: 協助產生符合專案規範的提交訊息，並推送到遠端儲存庫。
 allowed-tools: Bash(git add:*),Bash(git branch:*),Bash(git diff:*),Bash(git log:*),Bash(git reset:*),Bash(git push:*),Bash(git status:*),Bash(git symbolic-ref:*)
-model: claude-haiku-4-5
 ---
 
 協助產生符合專案規範的提交訊息，並推送到遠端儲存庫。
