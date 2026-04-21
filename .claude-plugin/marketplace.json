@@ -1,28 +1,13 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "mileschou-marketplace",
   "owner": {
     "name": "Miles Chou"
   },
   "plugins": [
     {
-      "name": "ddd",
-      "description": "Domain-Driven Design (DDD) tools and best practices",
-      "category": "development",
-      "version": "1.0.0",
-      "keywords": [
-        "ddd",
-        "domain-driven-design",
-        "strategic-design",
-        "bounded-context"
-      ],
-      "source": "./plugins/ddd"
-    },
-    {
       "name": "document",
       "description": "Document tools",
       "category": "development",
-      "version": "1.0.0",
       "keywords": [
         "document"
       ],
@@ -32,19 +17,10 @@
       "name": "git",
       "description": "Git tools",
       "category": "development",
-      "version": "1.0.1",
       "keywords": [
         "git"
       ],
       "source": "./plugins/git"
-    },
-    {
-      "name": "orik",
-      "description": "Orik tools",
-      "category": "development",
-      "keywords": [
-      ],
-      "source": "./plugins/orik"
     }
   ]
 }
