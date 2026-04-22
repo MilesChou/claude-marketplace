@@ -29,11 +29,7 @@ Once the target skill is confirmed, locate its SKILL.md by running:
 ${CLAUDE_SKILL_DIR}/scripts/find-skill.sh <skill-name>
 ```
 
-The script searches `~/.claude/skills`, the project's `.claude/skills` and `plugins/` directories. If the user is running with `--plugin-dir`, pass it as an additional argument:
-
-```bash
-${CLAUDE_SKILL_DIR}/scripts/find-skill.sh <skill-name> --plugin-dir <dir>
-```
+The script searches `~/.claude/skills` and the current working directory recursively.
 
 Use the results to confirm the target path via `AskUserQuestion`:
 
