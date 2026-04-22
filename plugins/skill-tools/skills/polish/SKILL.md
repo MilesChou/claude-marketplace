@@ -4,6 +4,7 @@ description: Retrospect and improve a skill based on execution experience.
 disable-model-invocation: true
 user-invocable: true
 argument-hint: "[skill-name]"
+allowed-tools: Bash(${CLAUDE_SKILL_DIR}/scripts/find-skill.sh:*)
 ---
 
 # Polish
@@ -21,6 +22,26 @@ If multiple skills were executed, rank them by "how many corrections occurred du
 - Ask the user to confirm which skill to retro, or specify another
 
 If the user already passed an argument (e.g. `/polish resolve-issue`), use it directly, but still summarize observed issues and ask for confirmation.
+
+Once the target skill is confirmed, locate its SKILL.md by running:
+
+```bash
+${CLAUDE_SKILL_DIR}/scripts/find-skill.sh <skill-name>
+```
+
+The script searches `~/.claude/skills`, the project's `.claude/skills` and `plugins/` directories. If the user is running with `--plugin-dir`, pass it as an additional argument:
+
+```bash
+${CLAUDE_SKILL_DIR}/scripts/find-skill.sh <skill-name> --plugin-dir <dir>
+```
+
+Use the results to confirm the target path via `AskUserQuestion`:
+
+- **One result** — present the path and ask for confirmation
+- **Multiple results** — list each as a numbered option and ask the user to pick one
+- **No results** — ask the user to provide the absolute path to the SKILL.md directly
+
+Once the path is confirmed, immediately read the file with the Read tool so its current content is available for Steps 3 and 4.
 
 ## Step 2: Catalog Correction Events
 
@@ -78,7 +99,7 @@ If any fix implies splitting the skill or creating a new skill, discuss with the
 
 After the user approves the fixes (or a subset of them):
 
-1. Apply each approved fix one by one using the Edit tool (if SKILL.md hasn't been read yet, use Read first to confirm current content)
+1. Apply each approved fix one by one using the Edit tool
 2. If metadata changes are needed (description, allowed-tools), update those too
 3. Show a summary of all changes made
 
