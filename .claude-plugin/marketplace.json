@@ -21,6 +21,15 @@
         "git"
       ],
       "source": "./plugins/git"
+    },
+    {
+      "name": "skill-tools",
+      "description": "Skill tools",
+      "category": "development",
+      "keywords": [
+        "skill"
+      ],
+      "source": "./plugins/skill-tools"
     }
   ]
 }
